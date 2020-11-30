@@ -1,0 +1,15 @@
+C:\Users\audri\Desktop\Proyecto BD1\Proyecto\Proyecto\bin\Debug\Proyecto.exe.config
+C:\Users\audri\Desktop\Proyecto BD1\Proyecto\Proyecto\bin\Debug\Proyecto.exe
+C:\Users\audri\Desktop\Proyecto BD1\Proyecto\Proyecto\bin\Debug\Proyecto.pdb
+C:\Users\audri\Desktop\Proyecto BD1\Proyecto\Proyecto\obj\Debug\Proyecto.csprojAssemblyReference.cache
+C:\Users\audri\Desktop\Proyecto BD1\Proyecto\Proyecto\obj\Debug\MainWindow.g.cs
+C:\Users\audri\Desktop\Proyecto BD1\Proyecto\Proyecto\obj\Debug\App.g.cs
+C:\Users\audri\Desktop\Proyecto BD1\Proyecto\Proyecto\obj\Debug\Proyecto_MarkupCompile.cache
+C:\Users\audri\Desktop\Proyecto BD1\Proyecto\Proyecto\obj\Debug\Proyecto_MarkupCompile.lref
+C:\Users\audri\Desktop\Proyecto BD1\Proyecto\Proyecto\obj\Debug\MainWindow.baml
+C:\Users\audri\Desktop\Proyecto BD1\Proyecto\Proyecto\obj\Debug\Proyecto.g.resources
+C:\Users\audri\Desktop\Proyecto BD1\Proyecto\Proyecto\obj\Debug\Proyecto.Properties.Resources.resources
+C:\Users\audri\Desktop\Proyecto BD1\Proyecto\Proyecto\obj\Debug\Proyecto.csproj.GenerateResource.cache
+C:\Users\audri\Desktop\Proyecto BD1\Proyecto\Proyecto\obj\Debug\Proyecto.csproj.CoreCompileInputs.cache
+C:\Users\audri\Desktop\Proyecto BD1\Proyecto\Proyecto\obj\Debug\Proyecto.exe
+C:\Users\audri\Desktop\Proyecto BD1\Proyecto\Proyecto\obj\Debug\Proyecto.pdb
