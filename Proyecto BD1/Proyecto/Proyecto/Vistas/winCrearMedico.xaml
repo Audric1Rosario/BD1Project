@@ -7,6 +7,6 @@
         mc:Ignorable="d"
         Title="winCrearMedico" Height="600" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Topmost="True">
     <Grid>
-        
+        <Grid HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100"/>
     </Grid>
 </Window>

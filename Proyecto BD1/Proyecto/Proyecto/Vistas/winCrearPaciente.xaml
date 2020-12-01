@@ -5,8 +5,44 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Proyecto.Vistas"
         mc:Ignorable="d"
-        Title="winCrearPaciente" Height="600" Width="800" ResizeMode="NoResize" Topmost="True" WindowStartupLocation="CenterScreen">
+        Title="Crear Paciente" Height="600" Width="800" ResizeMode="NoResize" Topmost="True" WindowStartupLocation="CenterScreen">
     <Grid>
-        
+        <Grid HorizontalAlignment="Left" Width="400" Margin="0">
+            <Border BorderBrush="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}" BorderThickness="1"/>
+            <Image Margin="50" Source="/Proyecto;component/Images/portrait.png"/>
+        </Grid>
+        <Grid Height="80" VerticalAlignment="Top" Margin="400,0,0,0">
+            <Label Content="Información del paciente." HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Times New Roman" FontSize="24" FontWeight="Bold" FontStyle="Italic"/>
+            <Border BorderBrush="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}" BorderThickness="1"/>
+        </Grid>
+        <Grid Margin="400,80,0,75">
+            <TextBox x:Name="txtCedula" Height="25" Margin="100,25,30,0" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center"/>
+            <TextBox x:Name="txtNombre" Height="25" Margin="100,60,30,0" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center"/>
+            <TextBox x:Name="txtApellido" Height="25" Margin="100,95,30,0" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center"/>
+            <TextBox x:Name="txtDireccion" Height="25" Margin="10,225,30,0" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center"/>
+            <TextBox x:Name="txtTelefono" Height="25" TextWrapping="Wrap" VerticalAlignment="Top" Margin="100,305,30,0" VerticalContentAlignment="Center"/>
+            <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Margin="10,165,0,0" Height="25"/>
+            <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Margin="200,165,0,0" Height="25"/>
+            <DatePicker x:Name="calFecha" VerticalAlignment="Top" Margin="160,270,30,0" Height="25"/>
+            <ComboBox x:Name="cbxEstado" VerticalAlignment="Top" Margin="10,376,0,0" Height="25" Width="150" HorizontalAlignment="Left"/>
+            <ComboBox x:Name="cbxTipoSangre" VerticalAlignment="Top" Margin="200,375,0,0" Height="25" Width="150" HorizontalAlignment="Left"/>
+            <Label Content="Cédula:" HorizontalAlignment="Left" Margin="10,25,0,0" VerticalAlignment="Top"/>
+            <Label Content="Nombre:" HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="Top"/>
+            <Label Content="Apellido:" HorizontalAlignment="Left" Margin="10,95,0,0" VerticalAlignment="Top"/>
+            <Label Content="Sexo" HorizontalAlignment="Left" Margin="10,135,0,0" VerticalAlignment="Top"/>
+            <Label Content="Estado civil: " HorizontalAlignment="Left" Margin="10,345,0,0" VerticalAlignment="Top"/>
+            <Label Content="Nacionalidad" HorizontalAlignment="Left" Margin="200,135,0,0" VerticalAlignment="Top"/>
+            <Label Content="Dirección:" HorizontalAlignment="Left" Margin="10,200,0,0" VerticalAlignment="Top"/>
+            <Label Content="Fecha de nacimiento:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,270,0,0"/>
+            <Label Content="Teléfono: " HorizontalAlignment="Left" Margin="10,301,0,0" VerticalAlignment="Top"/>
+            <Label Content="Tipo de sangre: " HorizontalAlignment="Left" Margin="200,345,0,0" VerticalAlignment="Top"/>
+            <Border BorderBrush="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}" BorderThickness="1" Panel.ZIndex="-2"/>
+        </Grid>
+        <Grid Height="75" VerticalAlignment="Bottom" Margin="400,0,0,0">
+            <Border BorderBrush="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}" BorderThickness="1"/>
+            <Button x:Name="btnCrear" Content="Crear" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Margin="0,0,160,0" Height="50"/>
+            <Button x:Name="btnSalir" Content="Salir" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Margin="160,0,0,0" Height="50" Click="btnSalir_Click"/>
+        </Grid>
+
     </Grid>
 </Window>

@@ -219,5 +219,8 @@
     <Resource Include="Images\asistencia-medica.png" />
     <Resource Include="Images\consultaMedica.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\portrait.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
