@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Proyecto.Vistas;
 
 namespace Proyecto
 {
@@ -23,6 +24,13 @@ namespace Proyecto
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void btnIngresar_Click(object sender, RoutedEventArgs e)
+        {
+            Dashboard nueva = new Dashboard();
+            nueva.Show();
+            this.Close();
         }
     }
 }

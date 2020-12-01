@@ -8,9 +8,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/first-aid-kit.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/hospital%20(1).png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/hospital.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/user.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/agregar-archivo.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/asistencia-medica.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/consultamedica.png")]
 
 

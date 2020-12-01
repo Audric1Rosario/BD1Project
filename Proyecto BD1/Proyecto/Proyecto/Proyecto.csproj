@@ -55,6 +55,45 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Vistas\Dashboard.xaml.cs">
+      <DependentUpon>Dashboard.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\winAutorizacion.xaml.cs">
+      <DependentUpon>winAutorizacion.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\winCentroSalud.xaml.cs">
+      <DependentUpon>winCentroSalud.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\winConsulta.xaml.cs">
+      <DependentUpon>winConsulta.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\winCrearAuto.xaml.cs">
+      <DependentUpon>winCrearAuto.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\winCrearCentro.xaml.cs">
+      <DependentUpon>winCrearCentro.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\winCrearConsulta.xaml.cs">
+      <DependentUpon>winCrearConsulta.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\winCrearMedico.xaml.cs">
+      <DependentUpon>winCrearMedico.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\winCrearPaciente.xaml.cs">
+      <DependentUpon>winCrearPaciente.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\winHistorial.xaml.cs">
+      <DependentUpon>winHistorial.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\winMedico.xaml.cs">
+      <DependentUpon>winMedico.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\winPaciente.xaml.cs">
+      <DependentUpon>winPaciente.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\winPerfilMedico.xaml.cs">
+      <DependentUpon>winPerfilMedico.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -67,6 +106,58 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Vistas\Dashboard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\winAutorizacion.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\winCentroSalud.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\winConsulta.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\winCrearAuto.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\winCrearCentro.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\winCrearConsulta.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\winCrearMedico.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\winCrearPaciente.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\winHistorial.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\winMedico.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\winPaciente.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\winPerfilMedico.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -99,6 +190,34 @@
     <Resource Include="Images\hospital %281%29.png" />
     <Resource Include="Images\hospital.png" />
     <Resource Include="Images\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\doctor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\hospital %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\consulta.png" />
+    <Resource Include="Images\doctoricon.png" />
+    <Resource Include="Images\documento.png" />
+    <Resource Include="Images\paciente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\newpaciente.png" />
+    <Resource Include="Images\pacientes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\lista.png" />
+    <Resource Include="Images\perfildoctor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\hospital %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\agregar-archivo.png" />
+    <Resource Include="Images\asistencia-medica.png" />
+    <Resource Include="Images\consultaMedica.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

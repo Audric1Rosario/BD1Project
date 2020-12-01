@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\audri\Desktop\Proyecto BD1\Proyecto\Proyecto\obj\Debug\
+C:\Users\audri\Desktop\New Workspace\BD1Project\Proyecto BD1\Proyecto\Proyecto\obj\Debug\
 Proyecto
 none
 false
 DEBUG;TRACE
-C:\Users\audri\Desktop\Proyecto BD1\Proyecto\Proyecto\App.xaml
-11151548125
+C:\Users\audri\Desktop\New Workspace\BD1Project\Proyecto BD1\Proyecto\Proyecto\App.xaml
+14-93756185
 
-5-2017746502
+181163037558
 13-1505183044
-MainWindow.xaml;
+MainWindow.xaml;Vistas\Dashboard.xaml;Vistas\winAutorizacion.xaml;Vistas\winCentroSalud.xaml;Vistas\winConsulta.xaml;Vistas\winCrearAuto.xaml;Vistas\winCrearCentro.xaml;Vistas\winCrearConsulta.xaml;Vistas\winCrearMedico.xaml;Vistas\winCrearPaciente.xaml;Vistas\winHistorial.xaml;Vistas\winMedico.xaml;Vistas\winPaciente.xaml;Vistas\winPerfilMedico.xaml;
 
 False
 

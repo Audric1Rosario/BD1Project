@@ -50,7 +50,7 @@
     <Grid>
         <Grid Margin="200,50">
             <Grid Height="50" VerticalAlignment="Bottom" Width="314">
-                <Button x:Name="btnIngresar" Content="Ingresar" Margin="20,5"/>
+                <Button x:Name="btnIngresar" Content="Ingresar" Margin="20,5" Click="btnIngresar_Click"/>
             </Grid>
             <Grid Height="100" VerticalAlignment="Bottom" Width="314" Margin="0,0,0,50">
                 <TextBox Style="{StaticResource placeHolder}" Tag="Login ID" x:Name="txtloginid" TextWrapping="Wrap" Margin="10,10,10,55"/>
