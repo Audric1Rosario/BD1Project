@@ -19,7 +19,7 @@ namespace Proyecto.Vistas
     /// </summary>
     public partial class winPerfilMedico : Window
     {
-        public winPerfilMedico()
+        public winPerfilMedico(string user, string type)
         {
             InitializeComponent();
         }

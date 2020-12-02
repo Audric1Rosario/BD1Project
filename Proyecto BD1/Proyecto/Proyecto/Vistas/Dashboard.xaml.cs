@@ -8,11 +8,25 @@ namespace Proyecto.Vistas
     /// </summary>
     public partial class Dashboard : Window
     {
-        public Dashboard()
+        string user;
+        string type;
+        public Dashboard(string username, string typeuser)
         {
             InitializeComponent();
             basic = (Color)ColorConverter.ConvertFromString(basicColor); 
             active = (Color)ColorConverter.ConvertFromString(activeColor);
+            user = username;
+            type = typeuser;
+
+            if (typeuser == "usuario")
+            {                            
+                // No puede usar.
+                btnCrearCentro.IsEnabled = false;
+                btnCrearMedico.IsEnabled = false;
+            } else if (typeuser == "administrador")
+            {
+                btnPerfil.IsEnabled = false;
+            }
         }
 
         #region Menu
@@ -210,7 +224,7 @@ namespace Proyecto.Vistas
         // Médicos
         private void btnPerfil_Click(object sender, RoutedEventArgs e)
         {
-            winPerfilMedico nuevo = new winPerfilMedico();
+            winPerfilMedico nuevo = new winPerfilMedico(user, type);
             nuevo.Owner = this;
             nuevo.ShowDialog();
         }
@@ -245,14 +259,14 @@ namespace Proyecto.Vistas
         // Autorizaciones
         private void btnCrearAuto_Click(object sender, RoutedEventArgs e)
         {
-            winCrearAuto nuevo = new winCrearAuto();
+            winCrearAuto nuevo = new winCrearAuto(type);
             nuevo.Owner = this;
             nuevo.ShowDialog();
         }
 
         private void btnListaAuto_Click(object sender, RoutedEventArgs e)
         {
-            winAutorizacion nuevo = new winAutorizacion();
+            winAutorizacion nuevo = new winAutorizacion(type);
             nuevo.Owner = this;
             nuevo.ShowDialog();
         }

@@ -6,27 +6,28 @@
         xmlns:local="clr-namespace:Proyecto.Vistas"
         mc:Ignorable="d"
         Title="Crear Paciente" Height="600" Width="800" ResizeMode="NoResize" Topmost="True" WindowStartupLocation="CenterScreen" Icon="/Proyecto;component/Images/hospital (1).png">
+
     <Grid>
         <Grid HorizontalAlignment="Left" Width="400" Margin="0">
-            <Border BorderBrush="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}" BorderThickness="1"/>
+            <Border BorderBrush="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}" BorderThickness="1" Panel.ZIndex="-2"/>
             <Image Margin="50,50,50,150" Source="/Proyecto;component/Images/portrait.png"/>
             <Label Content="Plan médico: " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,455,0,0"/>
             <Label Content="Cobertura: " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,490,0,0"/>
-            <TextBox x:Name="txtPlan" Height="25" TextWrapping="Wrap" VerticalAlignment="Top" Margin="100,455,30,0" VerticalContentAlignment="Center"/>
+            <TextBox x:Name="txtPlan" Height="25" TextWrapping="Wrap" VerticalAlignment="Top" Margin="100,455,30,0" VerticalContentAlignment="Center" MaxLength="25"/>
             <TextBox x:Name="txtCobertura" Height="25" TextWrapping="Wrap" VerticalAlignment="Top" Margin="100,490,30,0" VerticalContentAlignment="Center"/>
             <Label Content="N. Afiliación: " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,525,0,0"/>
-            <TextBox x:Name="txtAfiliacion" Height="25" TextWrapping="Wrap" VerticalAlignment="Top" Margin="100,525,30,0" VerticalContentAlignment="Center"/>
+            <ComboBox x:Name="cbxAfiliacion" VerticalAlignment="Top" Margin="100,525,30,0" Height="25"/>
         </Grid>
         <Grid Height="80" VerticalAlignment="Top" Margin="400,0,0,0">
             <Label Content="Información del paciente." HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Times New Roman" FontSize="24" FontWeight="Bold" FontStyle="Italic"/>
             <Border BorderBrush="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}" BorderThickness="1"/>
         </Grid>
         <Grid Margin="400,80,0,75">
-            <TextBox x:Name="txtCedula" Height="25" Margin="100,25,30,0" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center"/>
-            <TextBox x:Name="txtNombre" Height="25" Margin="100,60,30,0" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center"/>
-            <TextBox x:Name="txtApellido" Height="25" Margin="100,95,30,0" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center"/>
-            <TextBox x:Name="txtDireccion" Height="25" Margin="10,225,30,0" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center"/>
-            <TextBox x:Name="txtTelefono" Height="25" TextWrapping="Wrap" VerticalAlignment="Top" Margin="100,305,30,0" VerticalContentAlignment="Center"/>
+            <TextBox x:Name="txtCedula" Height="25" Margin="100,25,30,0" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center" PreviewTextInput="txtCedula_PreviewTextInput" MaxLength="11"/>
+            <TextBox x:Name="txtNombre" Height="25" Margin="100,60,30,0" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center" MaxLength="35"/>
+            <TextBox x:Name="txtApellido" Height="25" Margin="100,95,30,0" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center" MaxLength="35"/>
+            <TextBox x:Name="txtDireccion" Height="25" Margin="10,225,30,0" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center" MaxLength="256"/>
+            <TextBox x:Name="txtTelefono" Height="25" TextWrapping="Wrap" VerticalAlignment="Top" Margin="100,305,30,0" VerticalContentAlignment="Center" MaxLength="10" TextChanged="txtTelefono_TextChanged" PreviewTextInput="txtTelefono_PreviewTextInput"/>
             <ComboBox x:Name="cbxSexo" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Margin="10,165,0,0" Height="25"/>
             <ComboBox x:Name="cbxNacionalidad" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Margin="200,165,0,0" Height="25"/>
             <DatePicker x:Name="calFecha" VerticalAlignment="Top" Margin="160,270,30,0" Height="25"/>
@@ -46,7 +47,7 @@
         </Grid>
         <Grid Height="75" VerticalAlignment="Bottom" Margin="400,0,0,0">
             <Border BorderBrush="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}" BorderThickness="1"/>
-            <Button x:Name="btnCrear" Content="Crear" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Margin="0,0,160,0" Height="50"/>
+            <Button x:Name="btnCrear" Content="Crear" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Margin="0,0,160,0" Height="50" Click="btnCrear_Click"/>
             <Button x:Name="btnSalir" Content="Salir" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Margin="160,0,0,0" Height="50" Click="btnSalir_Click"/>
         </Grid>
 

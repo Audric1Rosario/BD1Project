@@ -19,7 +19,7 @@ namespace Proyecto.Vistas
     /// </summary>
     public partial class winAutorizacion : Window
     {
-        public winAutorizacion()
+        public winAutorizacion(string typeuser)
         {
             InitializeComponent();
         }

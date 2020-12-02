@@ -19,7 +19,7 @@ namespace Proyecto.Vistas
     /// </summary>
     public partial class winCrearAuto : Window
     {
-        public winCrearAuto()
+        public winCrearAuto(string typeuser)
         {
             InitializeComponent();
         }

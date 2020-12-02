@@ -18,10 +18,10 @@
             <Border BorderBrush="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}" BorderThickness="1"/>
         </Grid>
         <Grid Margin="400,80,0,75">
-            <TextBox x:Name="txtCedula" Height="25" Margin="100,25,30,0" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center"/>
-            <TextBox x:Name="txtNombre" Height="25" Margin="100,60,30,0" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center"/>
-            <TextBox x:Name="txtApellido" Height="25" Margin="100,95,30,0" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center"/>
-            <TextBox x:Name="txtDireccion" Height="25" Margin="10,225,30,0" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center"/>
+            <TextBox x:Name="txtCedula" Height="25" Margin="100,25,30,0" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center" PreviewTextInput="txtCedula_PreviewTextInput" MaxLength="11"/>
+            <TextBox x:Name="txtNombre" Height="25" Margin="100,60,30,0" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center" MaxLength="35"/>
+            <TextBox x:Name="txtApellido" Height="25" Margin="100,95,30,0" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center" MaxLength="35"/>
+            <TextBox x:Name="txtDireccion" Height="25" Margin="10,225,30,0" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center" MaxLength="256"/>
             <ComboBox x:Name="cbxEspecialidad" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Margin="10,165,0,0" Height="25"/>
             <Label Content="Cédula:" HorizontalAlignment="Left" Margin="10,25,0,0" VerticalAlignment="Top"/>
             <Label Content="Nombre:" HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="Top"/>
@@ -29,8 +29,8 @@
             <Label Content="Especialidad" HorizontalAlignment="Left" Margin="10,135,0,0" VerticalAlignment="Top"/>
             <Label Content="Dirección:" HorizontalAlignment="Left" Margin="10,200,0,0" VerticalAlignment="Top"/>
             <Border BorderBrush="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}" BorderThickness="1" Panel.ZIndex="-2"/>
-            <TextBox x:Name="txtUserid" Height="24" Margin="100,265,30,0" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center"/>
-            <TextBox x:Name="txtPassword" Height="26" Margin="100,300,30,0" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center"/>
+            <TextBox x:Name="txtUserid" Height="24" Margin="100,265,30,0" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center" MaxLength="25"/>
+            <TextBox x:Name="txtPassword" Height="26" Margin="100,300,30,0" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center" MaxLength="13"/>
             <Label Content="User ID:" HorizontalAlignment="Left" Margin="10,265,0,0" VerticalAlignment="Top"/>
             <Label Content="Contraseña:" HorizontalAlignment="Left" Margin="10,300,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
                 <Label.RenderTransform>
@@ -42,14 +42,12 @@
                     </TransformGroup>
                 </Label.RenderTransform>
             </Label>
-            <ListBox x:Name="lstCentros" Margin="100,330,30,10"/>
-            <Label Content="Centros:" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="1.526,4.269" Margin="10,330,0,0"/>
             <Label Content="N. Afiliación: " HorizontalAlignment="Left" Margin="200,135,0,0" VerticalAlignment="Top"/>
-            <TextBox x:Name="txtAfiliacion" Height="25" TextWrapping="Wrap" VerticalAlignment="Top" Margin="200,165,30,0" VerticalContentAlignment="Center"/>
+            <ComboBox x:Name="cbxAfiliacion" VerticalAlignment="Top" Margin="200,165,30,0" Height="25"/>
         </Grid>
         <Grid Height="75" VerticalAlignment="Bottom" Margin="400,0,0,0">
             <Border BorderBrush="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}" BorderThickness="1"/>
-            <Button x:Name="btnCrear" Content="Crear" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Margin="0,0,160,0" Height="50"/>
+            <Button x:Name="btnCrear" Content="Crear" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Margin="0,0,160,0" Height="50" Click="btnCrear_Click"/>
             <Button x:Name="btnSalir" Content="Salir" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Margin="160,0,0,0" Height="50" Click="btnSalir_Click"/>
         </Grid>
     </Grid>
