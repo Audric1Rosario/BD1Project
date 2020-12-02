@@ -22,6 +22,12 @@ namespace Proyecto.Vistas
         public winCrearConsulta()
         {
             InitializeComponent();
+            txtFecha.Text = DateTime.Now.Date.ToString();
+        }
+
+        private void btnSalir_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -19,9 +19,18 @@ namespace Proyecto.Vistas
     /// </summary>
     public partial class winCrearPaciente : Window
     {
+        string[] estado = { "Soltero/a", "Casado/a" };
+        string[] nacionalidad = { "DOM", "USA", "COL", "CHN", "CRI", "CUB"};
+        string[] sexo = { "M", "F" };
+        string[] tipoSangre = { "A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-" };
         public winCrearPaciente()
         {
             InitializeComponent();
+            // Crear todos los itenes del combo box
+            cbxEstado.ItemsSource = estado;
+            cbxNacionalidad.ItemsSource = nacionalidad;
+            cbxSexo.ItemsSource = sexo;
+            cbxTipoSangre.ItemsSource = tipoSangre;
         }
 
         private void btnSalir_Click(object sender, RoutedEventArgs e)

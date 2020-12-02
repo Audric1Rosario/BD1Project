@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Proyecto.Vistas"
         mc:Ignorable="d"
-        Title="Crear Paciente" Height="600" Width="800" ResizeMode="NoResize" Topmost="True" WindowStartupLocation="CenterScreen">
+        Title="Crear Paciente" Height="600" Width="800" ResizeMode="NoResize" Topmost="True" WindowStartupLocation="CenterScreen" Icon="/Proyecto;component/Images/hospital (1).png">
     <Grid>
         <Grid HorizontalAlignment="Left" Width="400" Margin="0">
             <Border BorderBrush="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}" BorderThickness="1"/>
@@ -21,8 +21,8 @@
             <TextBox x:Name="txtApellido" Height="25" Margin="100,95,30,0" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center"/>
             <TextBox x:Name="txtDireccion" Height="25" Margin="10,225,30,0" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center"/>
             <TextBox x:Name="txtTelefono" Height="25" TextWrapping="Wrap" VerticalAlignment="Top" Margin="100,305,30,0" VerticalContentAlignment="Center"/>
-            <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Margin="10,165,0,0" Height="25"/>
-            <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Margin="200,165,0,0" Height="25"/>
+            <ComboBox x:Name="cbxSexo" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Margin="10,165,0,0" Height="25"/>
+            <ComboBox x:Name="cbxNacionalidad" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Margin="200,165,0,0" Height="25"/>
             <DatePicker x:Name="calFecha" VerticalAlignment="Top" Margin="160,270,30,0" Height="25"/>
             <ComboBox x:Name="cbxEstado" VerticalAlignment="Top" Margin="10,376,0,0" Height="25" Width="150" HorizontalAlignment="Left"/>
             <ComboBox x:Name="cbxTipoSangre" VerticalAlignment="Top" Margin="200,375,0,0" Height="25" Width="150" HorizontalAlignment="Left"/>
