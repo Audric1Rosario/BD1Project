@@ -271,13 +271,6 @@ namespace Proyecto.Vistas
             nuevo.ShowDialog();
         }
 
-        private void btnListaConsultas_Click(object sender, RoutedEventArgs e)
-        {
-            winConsulta nuevo = new winConsulta();
-            nuevo.Owner = this;
-            nuevo.ShowDialog();
-        }
-
         #endregion
     }
 }

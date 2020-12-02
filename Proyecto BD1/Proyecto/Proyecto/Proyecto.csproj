@@ -64,9 +64,6 @@
     <Compile Include="Vistas\winCentroSalud.xaml.cs">
       <DependentUpon>winCentroSalud.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\winConsulta.xaml.cs">
-      <DependentUpon>winConsulta.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Vistas\winCrearAuto.xaml.cs">
       <DependentUpon>winCrearAuto.xaml</DependentUpon>
     </Compile>
@@ -115,10 +112,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Vistas\winCentroSalud.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Vistas\winConsulta.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

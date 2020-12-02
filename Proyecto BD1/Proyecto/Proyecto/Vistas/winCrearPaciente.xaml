@@ -9,7 +9,13 @@
     <Grid>
         <Grid HorizontalAlignment="Left" Width="400" Margin="0">
             <Border BorderBrush="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}" BorderThickness="1"/>
-            <Image Margin="50" Source="/Proyecto;component/Images/portrait.png"/>
+            <Image Margin="50,50,50,150" Source="/Proyecto;component/Images/portrait.png"/>
+            <Label Content="Plan médico: " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,455,0,0"/>
+            <Label Content="Cobertura: " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,490,0,0"/>
+            <TextBox x:Name="txtPlan" Height="25" TextWrapping="Wrap" VerticalAlignment="Top" Margin="100,455,30,0" VerticalContentAlignment="Center"/>
+            <TextBox x:Name="txtCobertura" Height="25" TextWrapping="Wrap" VerticalAlignment="Top" Margin="100,490,30,0" VerticalContentAlignment="Center"/>
+            <Label Content="N. Afiliación: " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,525,0,0"/>
+            <TextBox x:Name="txtAfiliacion" Height="25" TextWrapping="Wrap" VerticalAlignment="Top" Margin="100,525,30,0" VerticalContentAlignment="Center"/>
         </Grid>
         <Grid Height="80" VerticalAlignment="Top" Margin="400,0,0,0">
             <Label Content="Información del paciente." HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Times New Roman" FontSize="24" FontWeight="Bold" FontStyle="Italic"/>

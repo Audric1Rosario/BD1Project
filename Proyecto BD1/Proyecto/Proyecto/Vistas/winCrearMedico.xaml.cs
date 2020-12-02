@@ -19,9 +19,15 @@ namespace Proyecto.Vistas
     /// </summary>
     public partial class winCrearMedico : Window
     {
+        string[] especialidades = { "Alergología", "Anestesiología", "Angiología", "Cardiología", "Dermatología", 
+                                    "Endocrinología", "Epidemiología", "Gastroenterología", "Geriatría", "Ginecología",
+                                    "Hematología", "Hepatología", "Infectología", "Neumología", "Neurología",
+                                    "Nutriología", "Oftalmología", "Pediatría", "Psiquiatría", "Reumatología", 
+                                    "Toxicología", "Traumatología", "Urología"};
         public winCrearMedico()
         {
             InitializeComponent();
+            cbxEspecialidad.ItemsSource = especialidades;
         }
 
         private void btnSalir_Click(object sender, RoutedEventArgs e)

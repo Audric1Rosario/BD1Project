@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Dashboard" Height="720" Width="1280" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Icon="/Proyecto;component/Images/hospital (1).png">
     <Grid>
-        <Grid x:Name="gridPaciente" Width="920" HorizontalAlignment="Right" Visibility="Hidden" IsEnabled="False">
+        <Grid x:Name="gridPaciente" Width="920" HorizontalAlignment="Right" Visibility="Hidden" d:IsHidden="True" IsEnabled="False">
             <Button x:Name="btnCrearPaciente" HorizontalAlignment="Center" VerticalAlignment="Center" Width="300" Height="300" Margin="310,0,0,0" Background="#FFA0F1B6" BorderBrush="#00000000" ToolTip="Crear un paciente" Click="btnCrearPaciente_Click">
                 <Image Height="250" Width="250" Source="/Proyecto;component/Images/newpaciente.png"/>
             </Button>
@@ -34,23 +34,20 @@
                 <Image Height="250" Width="250" Source="/Proyecto;component/Images/hospital (3).png"/>
             </Button>
         </Grid>
-        <Grid x:Name="gridAutorizaciones" HorizontalAlignment="Right" Width="920" d:IsHidden="True" Visibility="Hidden" IsEnabled="False">
-            <Button x:Name="btnCrearAuto" HorizontalAlignment="Center" VerticalAlignment="Center" Width="300" Height="300" Margin="155,195.5,465,195.5" Background="#FFA0F1B6" BorderBrush="#00000000" ToolTip="Crear autorización" Click="btnCrearAuto_Click">
+        <Grid x:Name="gridAutorizaciones" HorizontalAlignment="Right" Width="920" Visibility="Hidden" d:IsHidden="True" IsEnabled="False">
+            <Button x:Name="btnCrearAuto" HorizontalAlignment="Center" VerticalAlignment="Center" Width="300" Height="300" Margin="155,195.5,465,195.5" Background="#FFA0F1B6" BorderBrush="#00000000" ToolTip="Autorizar procedimiento." Click="btnCrearAuto_Click">
                 <Image Height="250" Width="250" Source="/Proyecto;component/Images/agregar-archivo.png"/>
             </Button>
             <Button x:Name="btnListaAuto" HorizontalAlignment="Center" VerticalAlignment="Center" Width="300" Height="300" Margin="465,195.5,155,195.5" Background="#FFA0F1B6" BorderBrush="#00000000" ToolTip="Lista de autorizaciones" Click="btnListaAuto_Click">
                 <Image Height="250" Width="250" Source="/Proyecto;component/Images/lista.png"/>
             </Button>
         </Grid>
-        <Grid x:Name="gridConsultas" HorizontalAlignment="Right" Width="920" Visibility="Hidden" IsEnabled="False" d:IsHidden="True">
-            <Button x:Name="btnCrearConsulta" HorizontalAlignment="Center" VerticalAlignment="Center" Width="300" Height="300" Margin="7.5,195.5,612.5,195.5" Background="#FFA0F1B6" ToolTip="Crear Consulta" BorderBrush="#00000000" Click="btnCrearConsulta_Click">
+        <Grid x:Name="gridConsultas" HorizontalAlignment="Right" Width="920" Visibility="Hidden" d:IsHidden="True" IsEnabled="False">
+            <Button x:Name="btnCrearConsulta" HorizontalAlignment="Center" VerticalAlignment="Center" Width="300" Height="300" Margin="0,0,310,0" Background="#FFA0F1B6" ToolTip="Crear Procedimiento" BorderBrush="#00000000" Click="btnCrearConsulta_Click">
                 <Image Height="250" Width="250" Source="/Proyecto;component/Images/consultaMedica.png"/>
             </Button>
-            <Button x:Name="btnGenerarHistorial" HorizontalAlignment="Center" VerticalAlignment="Center" Width="300" Height="300" Margin="310,195.5" Background="#FFA0F1B6" ToolTip="Historial de consultas" BorderBrush="#00000000" Click="btnGenerarHistorial_Click">
+            <Button x:Name="btnGenerarHistorial" HorizontalAlignment="Center" VerticalAlignment="Center" Width="300" Height="300" Margin="310,0,0,0" Background="#FFA0F1B6" ToolTip="Historial de procedimientos" BorderBrush="#00000000" Click="btnGenerarHistorial_Click">
                 <Image Height="250" Width="250" Source="/Proyecto;component/Images/lista.png"/>
-            </Button>
-            <Button x:Name="btnListaConsultas" HorizontalAlignment="Center" VerticalAlignment="Center" Width="300" Height="300" Margin="612.5,195.5,7.5,195.5" Background="#FFA0F1B6" ToolTip="Ver consultas" BorderBrush="#00000000" Click="btnListaConsultas_Click">
-                <Image Height="250" Width="250" Source="/Proyecto;component/Images/asistencia-medica.png"/>
             </Button>
         </Grid>
         <Grid x:Name="gridMenu" Margin="0" Width="350" HorizontalAlignment="Left" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}">

@@ -32,7 +32,6 @@ C:\Users\audri\Desktop\New Workspace\BD1Project\Proyecto BD1\Proyecto\Proyecto\o
 C:\Users\audri\Desktop\New Workspace\BD1Project\Proyecto BD1\Proyecto\Proyecto\obj\Debug\Proyecto.pdb
 C:\Users\audri\Desktop\New Workspace\BD1Project\Proyecto BD1\Proyecto\Proyecto\obj\Debug\Vistas\winAutorizacion.g.cs
 C:\Users\audri\Desktop\New Workspace\BD1Project\Proyecto BD1\Proyecto\Proyecto\obj\Debug\Vistas\winCentroSalud.g.cs
-C:\Users\audri\Desktop\New Workspace\BD1Project\Proyecto BD1\Proyecto\Proyecto\obj\Debug\Vistas\winConsulta.g.cs
 C:\Users\audri\Desktop\New Workspace\BD1Project\Proyecto BD1\Proyecto\Proyecto\obj\Debug\Vistas\winCrearAuto.g.cs
 C:\Users\audri\Desktop\New Workspace\BD1Project\Proyecto BD1\Proyecto\Proyecto\obj\Debug\Vistas\winCrearCentro.g.cs
 C:\Users\audri\Desktop\New Workspace\BD1Project\Proyecto BD1\Proyecto\Proyecto\obj\Debug\Vistas\winCrearConsulta.g.cs
@@ -44,7 +43,6 @@ C:\Users\audri\Desktop\New Workspace\BD1Project\Proyecto BD1\Proyecto\Proyecto\o
 C:\Users\audri\Desktop\New Workspace\BD1Project\Proyecto BD1\Proyecto\Proyecto\obj\Debug\Vistas\winPerfilMedico.g.cs
 C:\Users\audri\Desktop\New Workspace\BD1Project\Proyecto BD1\Proyecto\Proyecto\obj\Debug\Vistas\winAutorizacion.baml
 C:\Users\audri\Desktop\New Workspace\BD1Project\Proyecto BD1\Proyecto\Proyecto\obj\Debug\Vistas\winCentroSalud.baml
-C:\Users\audri\Desktop\New Workspace\BD1Project\Proyecto BD1\Proyecto\Proyecto\obj\Debug\Vistas\winConsulta.baml
 C:\Users\audri\Desktop\New Workspace\BD1Project\Proyecto BD1\Proyecto\Proyecto\obj\Debug\Vistas\winCrearAuto.baml
 C:\Users\audri\Desktop\New Workspace\BD1Project\Proyecto BD1\Proyecto\Proyecto\obj\Debug\Vistas\winCrearCentro.baml
 C:\Users\audri\Desktop\New Workspace\BD1Project\Proyecto BD1\Proyecto\Proyecto\obj\Debug\Vistas\winCrearConsulta.baml

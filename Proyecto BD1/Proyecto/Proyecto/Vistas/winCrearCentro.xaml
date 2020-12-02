@@ -18,10 +18,12 @@
             <Label Content="Provincia:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,55,0,0"/>
             <Label Content="Municipio:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,90,0,0"/>
             <Label Content="Plazas Disponibles:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,280,0,0"/>
-            <ListBox Height="175" VerticalAlignment="Top" Margin="150,90,30,0"/>
-            <ComboBox VerticalAlignment="Top" Margin="150,55,30,0" Height="25"/>
-            <TextBox Height="25" TextWrapping="Wrap" VerticalAlignment="Top" Margin="150,20,30,0" VerticalContentAlignment="Center"/>
-            <TextBox Height="25" TextWrapping="Wrap" VerticalAlignment="Top" Margin="150,280,30,0" VerticalContentAlignment="Center"/>
+            <ListBox x:Name="lstMunicipio" Height="175" VerticalAlignment="Top" Margin="150,90,30,0"/>
+            <ComboBox x:Name="cbxProvincia" VerticalAlignment="Top" Margin="150,55,30,0" Height="25"/>
+            <TextBox x:Name="txtNombre" Height="25" TextWrapping="Wrap" VerticalAlignment="Top" Margin="150,20,30,0" VerticalContentAlignment="Center"/>
+            <TextBox x:Name="txtPlazas" Height="25" TextWrapping="Wrap" VerticalAlignment="Top" Margin="150,280,30,0" VerticalContentAlignment="Center"/>
+            <Label Content="N. Afiliación: " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,315,0,0"/>
+            <TextBox x:Name="txtAfiliacion" Height="25" TextWrapping="Wrap" VerticalAlignment="Top" Margin="150,315,30,0" VerticalContentAlignment="Center"/>
         </Grid>
         <Grid HorizontalAlignment="Right" Width="234" Margin="0,0,0,75">
             <Image Margin="25" Source="/Proyecto;component/Images/hospital (3).png"/>

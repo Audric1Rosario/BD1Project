@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Proyecto.Vistas"
         mc:Ignorable="d"
-        Title="Crear Consulta" Height="600" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Topmost="True" Icon="/Proyecto;component/Images/hospital (1).png">
+        Title="Crear Procedimiento" Height="600" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Topmost="True" Icon="/Proyecto;component/Images/hospital (1).png">
     <Grid>
         <Grid Height="75" VerticalAlignment="Bottom" Margin="400,0,0,0">
             <Border BorderBrush="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}" BorderThickness="1"/>
@@ -32,6 +32,8 @@
                 <TextBox x:Name="txtTipoSangre" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Margin="120,125,30,0" VerticalContentAlignment="Center" IsEnabled="False"/>
                 <TextBox x:Name="txtEstadoSalud" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Margin="120,160,30,0" VerticalContentAlignment="Center" IsEnabled="False"/>
                 <TextBox x:Name="txtNacimPaciente" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Margin="120,195,30,0" VerticalContentAlignment="Center" IsEnabled="False"/>
+                <Label Content="N. Afiliación: " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,230,0,0"/>
+                <TextBox x:Name="txtAfiliacion" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Margin="120,230,30,0" VerticalContentAlignment="Center" IsEnabled="False"/>
             </Grid>
         </Grid>
         <Grid HorizontalAlignment="Right" Width="394" Margin="0,0,0,75">
@@ -42,17 +44,19 @@
                 <Label Content="Cobertura:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,20,0,0"/>
                 <Label Content="Tipo de Procedimiento:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,55,0,0"/>
                 <Label Content="Fecha:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,90,0,0"/>
-                <Label Content="Monto:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,125,0,0"/>
+                <Label x:Name="lblCobertura" Content="Cobertura:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,125,0,0"/>
                 <Label Content="Descripción:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,160,0,0"/>
                 <Label Content="Medicamento:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,390,0,0"/>
                 <TextBox x:Name="txtCobertura" Height="25" TextWrapping="Wrap" VerticalAlignment="Top" Margin="150,20,30,0" VerticalContentAlignment="Center"/>
                 <TextBox x:Name="txtTipoConsulta" Height="25" TextWrapping="Wrap" VerticalAlignment="Top" Margin="150,55,30,0" VerticalContentAlignment="Center"/>
                 <TextBox x:Name="txtFecha" Height="25" TextWrapping="Wrap" VerticalAlignment="Top" Margin="150,90,30,0" VerticalContentAlignment="Center" IsEnabled="False"/>
-                <TextBox x:Name="txtMonto" Height="25" TextWrapping="Wrap" VerticalAlignment="Top" Margin="150,125,30,0" VerticalContentAlignment="Center"/>
-                <RichTextBox x:Name="txtDescripcion" Height="219" VerticalAlignment="Top" Margin="150,160,30,0" Cursor="None">
+                <TextBox x:Name="txtCobertura1" Height="25" TextWrapping="Wrap" VerticalAlignment="Top" Margin="150,125,30,0" VerticalContentAlignment="Center" IsEnabled="False"/>
+                <RichTextBox x:Name="txtDescripcion" Height="176" VerticalAlignment="Top" Margin="150,160,30,0" Cursor="None">
                     <FlowDocument/>
                 </RichTextBox>
                 <TextBox x:Name="txtMedicamento" Height="25" TextWrapping="Wrap" VerticalAlignment="Top" Margin="150,390,30,0" VerticalContentAlignment="Center"/>
+                <Label Content="Padecimiento:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,355,0,0"/>
+                <TextBox x:Name="txtPadecimiento" Height="25" TextWrapping="Wrap" VerticalAlignment="Top" Margin="150,355,30,0" VerticalContentAlignment="Center"/>
             </Grid>
         </Grid>
 

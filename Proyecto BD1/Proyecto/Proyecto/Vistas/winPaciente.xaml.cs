@@ -19,9 +19,17 @@ namespace Proyecto.Vistas
     /// </summary>
     public partial class winPaciente : Window
     {
+        string[] opciones = { "Búsqueda normal", "Autorizaciones", "Riesgo" };
         public winPaciente()
         {
             InitializeComponent();
+
+            cbxOpcion.ItemsSource = opciones;
+        }
+
+        private void btnSalir_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }
