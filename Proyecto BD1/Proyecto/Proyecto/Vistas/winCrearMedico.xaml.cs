@@ -70,9 +70,27 @@ namespace Proyecto.Vistas
                 MessageBox.Show("Faltan campos por llenar.", "Advertencia", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
-
-            // Primero inserto usuario... 
+            // Compruevo si existe un valor del medico...
             SqlConnection con = new SqlConnection(conString);
+            string queryb = "SELECT * FROM Medico WHERE codMedico = '" + txtCedula.Text + "'";
+            using (SqlCommand cmd = new SqlCommand(queryb, con))
+            {
+                con.Open();
+                SqlDataReader dr = cmd.ExecuteReader();
+                if (dr.Read()) // Si lee entonces existe... 
+                {
+                    con.Close();
+                    MessageBox.Show("Ya existe el usuario.", "Advertencia", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    init();
+                    return;
+                }
+                
+                con.Close();
+            }
+
+            
+            
+            // Primero inserto usuario... 
             string query = "INSERT INTO Usuario (idUsuario, contrasena, tipoUsuario) VALUES ('" +
                txtUserid.Text + "','" + txtPassword.Text + "', 'usuario');";
             using (SqlCommand cmda = new SqlCommand(query, con))
@@ -90,20 +108,10 @@ namespace Proyecto.Vistas
                     return;
                 }
             }
-
-            string queryb = "SELECT * FROM Medico";
-            int count = 0;
-            using (SqlCommand cmd = new SqlCommand(queryb, con))
-            {
-                con.Open();
-                SqlDataReader dr = cmd.ExecuteReader();
-                count = dr.FieldCount;
-                con.Close();
-            }
-
+            string nombreCompleto = txtNombre.Text + " " + txtApellido.Text;
             // Despues inserto el medico... 
             string querya = "INSERT INTO Medico (codMedico, nombre, direccion, especialidad, idUsuario, numAfiliacion) VALUES " +
-                "('" + count + "MED','" + txtNombre.Text + "','" + txtDireccion.Text + "','" + cbxEspecialidad.Text + "','" + txtUserid.Text
+                "('" + txtCedula.Text + "','" + nombreCompleto + "','" + txtDireccion.Text + "','" + cbxEspecialidad.Text + "','" + txtUserid.Text
                 + "','"+ cbxAfiliacion.Text + "');";
             using (SqlCommand cmda = new SqlCommand(querya, con))
             {

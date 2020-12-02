@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Lista de pacientes." Height="600" Width="800" ResizeMode="NoResize" Icon="/Proyecto;component/Images/hospital (1).png" WindowStartupLocation="CenterScreen">
     <Grid>
-        <DataGrid Width="400" HorizontalAlignment="Left" Margin="0,0,0,52"/>
+        <DataGrid x:Name="dataGrid" Width="400" HorizontalAlignment="Left" Margin="0,0,0,52"/>
         <Grid Height="75" VerticalAlignment="Bottom" Margin="400,0,0,0">
             <Border BorderBrush="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}" BorderThickness="1"/>
             <Button x:Name="btnActualizar" Content="Actualizar" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Margin="0,0,160,0" Height="50"/>
@@ -38,7 +38,7 @@
         </Grid>
         <Button x:Name="btnSeleccionar" Content="Seleccionar" HorizontalAlignment="Left" Margin="20,0,0,10" VerticalAlignment="Bottom" Width="75" Height="25" ToolTip="Seleccione un procedimiento."/>
         <ComboBox x:Name="cbxOpcion" Margin="115,0,0,10" VerticalAlignment="Bottom" Height="25" HorizontalAlignment="Left" Width="180"/>
-        <Button x:Name="btnBuscar" HorizontalAlignment="Left" Margin="310,0,0,10" VerticalAlignment="Bottom" Width="75" Height="25">
+        <Button x:Name="btnBuscar" HorizontalAlignment="Left" Margin="310,0,0,10" VerticalAlignment="Bottom" Width="75" Height="25" Click="btnBuscar_Click">
             <Image Height="20" Width="20" Source="/Proyecto;component/Images/loupe.png"/>
         </Button>
 

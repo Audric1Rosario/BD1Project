@@ -12,16 +12,16 @@
             <Border BorderBrush="Black" BorderThickness="1" Panel.ZIndex="-1" Background="#FFA0F1B6"/>
         </Grid>
         <Grid Margin="400,50,0,75">
-            <TextBox x:Name="txtCedula" Height="25" Margin="100,25,30,0" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center"/>
-            <TextBox x:Name="txtNombre" Height="25" Margin="100,60,30,0" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center"/>
+            <TextBox x:Name="txtCedula" Height="25" Margin="100,25,30,0" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center" IsEnabled="False"/>
+            <TextBox x:Name="txtNombre" Height="25" Margin="100,60,30,0" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center" IsEnabled="False"/>
             <Label Content="Cédula:" HorizontalAlignment="Left" Margin="10,25,0,0" VerticalAlignment="Top"/>
             <Label Content="Nombre:" HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="Top"/>
             <Label Content="Especialidad" HorizontalAlignment="Left" Margin="10,100,0,0" VerticalAlignment="Top"/>
-            <TextBox x:Name="txtUserid" Height="24" Margin="100,200,30,0" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center"/>
+            <TextBox x:Name="txtUserid" Height="24" Margin="100,200,30,0" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center" IsEnabled="False"/>
             <Label Content="User ID:" HorizontalAlignment="Left" Margin="10,200,0,0" VerticalAlignment="Top"/>
             <Label Content="N. Afiliación: " HorizontalAlignment="Left" Margin="200,100,0,0" VerticalAlignment="Top"/>
-            <TextBox x:Name="txtAfiliacion" Height="25" TextWrapping="Wrap" VerticalAlignment="Top" Margin="200,130,30,0" VerticalContentAlignment="Center"/>
-            <TextBox x:Name="txtEspecialidad" Height="25" TextWrapping="Wrap" VerticalAlignment="Top" Margin="10,130,0,0" VerticalContentAlignment="Center" Width="150" HorizontalAlignment="Left"/>
+            <TextBox x:Name="txtAfiliacion" Height="25" TextWrapping="Wrap" VerticalAlignment="Top" Margin="200,130,30,0" VerticalContentAlignment="Center" IsEnabled="False"/>
+            <TextBox x:Name="txtEspecialidad" Height="25" TextWrapping="Wrap" VerticalAlignment="Top" Margin="10,130,0,0" VerticalContentAlignment="Center" Width="150" HorizontalAlignment="Left" IsEnabled="False"/>
         </Grid>
         <Grid Height="75" VerticalAlignment="Bottom" Margin="400,0,0,0">
             <Border BorderBrush="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}" BorderThickness="1"/>

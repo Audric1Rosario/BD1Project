@@ -98,13 +98,14 @@ namespace Proyecto.Vistas
                     return;
                 }
 
-                string queryb = "SELECT * FROM CentroMedico";
+                string queryb = "SELECT COUNT(*) AS Suma FROM CentroMedico";
                 int count = 0;
                 using (SqlCommand cmd = new SqlCommand(queryb, con))
                 {
                     con.Open();
                     SqlDataReader dr = cmd.ExecuteReader();
-                    count = dr.FieldCount;
+                    if (dr.Read())
+                        count = int.Parse(dr["Suma"].ToString().Trim());
                     con.Close();
                 }
 

@@ -7,23 +7,13 @@
         mc:Ignorable="d"
         Title="Autorizaciones." Height="600" Width="800" Icon="/Proyecto;component/Images/hospital (1).png" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid>
-        <DataGrid HorizontalAlignment="Left" Width="500"/>
-        <Grid Margin="500,50,0,75">
-            <Label Content="Cobertura:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,20,0,0"/>
-            <Label Content="Tipo de Procedimiento:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,90,0,0"/>
-            <Label Content="Fecha:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,160,0,0"/>
-            <Label Content="Monto:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,230,0,0"/>
-            <TextBox x:Name="txtCobertura" Height="25" TextWrapping="Wrap" VerticalAlignment="Top" Margin="20,55,30,0" VerticalContentAlignment="Center" IsEnabled="False"/>
-            <TextBox x:Name="txtTipoConsulta" Height="25" TextWrapping="Wrap" VerticalAlignment="Top" Margin="20,125,30,0" VerticalContentAlignment="Center" IsEnabled="False"/>
-            <TextBox x:Name="txtFecha" Height="25" TextWrapping="Wrap" VerticalAlignment="Top" Margin="20,195,30,0" VerticalContentAlignment="Center" IsEnabled="False"/>
-            <TextBox x:Name="txtMonto" Height="25" TextWrapping="Wrap" VerticalAlignment="Top" Margin="20,265,30,0" VerticalContentAlignment="Center" IsEnabled="False"/>
-        </Grid>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Width="794" Margin="0,50,0,75"/>
         <Grid Height="75" VerticalAlignment="Bottom" Margin="500,0,0,0">
             <Border BorderBrush="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}" BorderThickness="1"/>
             <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Center" VerticalAlignment="Center" Width="100" Margin="0,0,105,0" Height="50" ToolTip="Cancele la autorización seleccionada."/>
             <Button x:Name="btnSalir" Content="Salir" HorizontalAlignment="Center" VerticalAlignment="Center" Width="100" Margin="105,0,0,0" Height="50" Click="btnSalir_Click"/>
         </Grid>
-        <Grid Height="50" VerticalAlignment="Top" Margin="500,0,0,0">
+        <Grid Height="50" VerticalAlignment="Top" Margin="0">
             <Label Content="Autorización" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Times New Roman" FontSize="24" FontWeight="Bold" FontStyle="Italic"/>
             <Border BorderBrush="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}" BorderThickness="1"/>
         </Grid>

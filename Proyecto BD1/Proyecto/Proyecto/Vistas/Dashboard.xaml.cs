@@ -274,7 +274,7 @@ namespace Proyecto.Vistas
         // Consultas
         private void btnCrearConsulta_Click(object sender, RoutedEventArgs e)
         {
-            winCrearConsulta nuevo = new winCrearConsulta();
+            winCrearConsulta nuevo = new winCrearConsulta(user);
             nuevo.Owner = this;
             nuevo.ShowDialog();
         }
