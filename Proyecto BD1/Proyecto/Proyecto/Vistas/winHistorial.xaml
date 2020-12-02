@@ -10,7 +10,7 @@
         <Grid Height="50" VerticalAlignment="Top">
             <Label Content="Listado de procedimientos." HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Times New Roman" FontSize="24" FontWeight="Bold" FontStyle="Italic" Margin="0"/>
         </Grid>
-        <DataGrid Margin="0,50,0,75"/>
+        <DataGrid x:Name="dataGrid" Margin="0,50,0,75"/>
         <Grid Height="75" VerticalAlignment="Bottom">
             <Button x:Name="btnSalir" Content="Salir" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="150" Margin="0,0,10,10" Height="50" Click="btnSalir_Click"/>
         </Grid>

@@ -26,6 +26,7 @@ namespace Proyecto.Vistas
             } else if (typeuser == "administrador")
             {
                 btnPerfil.IsEnabled = false;
+                btnCrearConsulta.IsEnabled = false;
             }
         }
 
